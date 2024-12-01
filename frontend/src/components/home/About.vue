@@ -22,7 +22,7 @@
         <div class="card-list">
             <a-card hoverable style="width: 300px">
                 <template #cover>
-                    <img alt="example" src="../../assets/dayana.png" />
+                    <img alt="example" src="../../assets/dayana.jpg" style=""/> 
                 </template>
                 <a-card-meta title="Dayana dos Santos">
                 </a-card-meta>
@@ -38,7 +38,7 @@
 
             <a-card hoverable style="width: 300px">
                 <template #cover>
-                    <img alt="example" src="../../assets/duda.jpeg" />
+                    <img alt="example" src="../../assets/maria.jpg" />
                 </template>
                 <a-card-meta title="Maria Eduarda">
                 </a-card-meta>

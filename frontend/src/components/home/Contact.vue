@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import { watch, ref } from 'vue';
-import axios from 'axios';
-import type { Dayjs } from 'dayjs';
-import moment from "moment";
+import { ref } from 'vue';
 
 const fullname = ref<string>('');
 const email = ref<string>('');
@@ -10,26 +7,6 @@ const school = ref<string>('');
 const classname = ref<string>('');
 const date = ref<string>('');
 const message = ref<string>('');
-
-const disableButton = false
-
-const onSubmit = async (e: any) => {
-    e.preventDefault();
-
-    // let dt = date.value ? moment(date.value).format('DD/MM/YYYY') : '';  // Se houver uma data
-    // await axios.post("https://formsubmit.co/carlosabdoamaral@gmail.com", {
-    //     nome_completo: fullname.value,
-    //     email: email.value,
-    //     nome_da_escola: school.value,
-    //     nome_da_turma: classname.value,
-    //     data_da_visita: dt,
-    //     mensagem: message.value
-    // }).then(res => {
-    //     console.log(res)
-    // }).catch(error => {
-    //     console.error("Erro ao enviar o formulário:", error);
-    // });
-};
 
 </script>
 
@@ -40,12 +17,11 @@ const onSubmit = async (e: any) => {
             <small>e deixe o dia dos alunos mais doce</small>
         </div>
         <div class="contact-form">
-            <form action="https://formsubmit.co/carlosabdoamaral@gmail.com" method="post"
-                v-on:submit="onSubmit($event)">
+            <form action="https://formsubmit.co/carlosabdoamaral@gmail.com" method="post">
                 <input type="hidden" name="_subject" value="Novo contato! 🐝✨">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="box">
-                <input type="hidden" name="_next" value="http://localhost:5173/">
+                <input type="hidden" name="_next" value="https://queenbee-floripa.web.app/">
 
                 <a-row style="width: 100%;">
                     <a-col :span="12" class="col">
@@ -75,7 +51,7 @@ const onSubmit = async (e: any) => {
                     </a-col>
                 </a-row>
                 <a-row>
-                    <button type="submit" v-bind:disabled="disableButton">Agendar!</button>
+                    <button type="submit">Agendar!</button>
                 </a-row>
             </form>
         </div>

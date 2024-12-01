@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import Pomada from "./Pomada.vue";
+import CaixaATX from "./CaixaATX.vue";
+import CaixaATI from "./CaixaATI.vue";
+import Racao from "./Racao.vue";
 </script>
 
 <template>
@@ -8,6 +10,8 @@ import Pomada from "./Pomada.vue";
             <h1>Nosso produto</h1>
             <small>mais recente</small>
         </div>
-        <Pomada />
+        <Racao />
+        <CaixaATX/>
+        <CaixaATI/>
     </div>
 </template>
